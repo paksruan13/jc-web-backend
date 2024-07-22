@@ -1,0 +1,38 @@
+{
+  "name": "jc-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@auth/mongodb-adapter": "^3.1.0",
+    "@aws-sdk/client-s3": "^3.600.0",
+    "aws-sdk": "^2.1648.0",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "mime-types": "^2.1.35",
+    "mongodb": "^6.6.1",
+    "mongoose": "^8.3.5",
+    "multiparty": "^4.2.3",
+    "next": "^14.2.5",
+    "next-auth": "^4.24.7",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-sortablejs": "^6.1.4",
+    "react-spinners": "^0.14.1",
+    "react-sweetalert2": "^0.6.0",
+    "sortablejs": "^1.15.2",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/sortablejs": "^1.15.8",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
