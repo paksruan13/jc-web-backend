@@ -7,6 +7,8 @@ const ServiceSchema = new Schema({
     images: [{type:String}], 
     category: {type:mongoose.Types.ObjectId, ref:'Category'},
     properties: {type:Object},
+}, {
+    timestamps: true,
 });
 
 export const Service = mongoose.models.Service || mongoose.model('Service', ServiceSchema);
