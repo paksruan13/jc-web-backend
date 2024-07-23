@@ -4,6 +4,7 @@ import fs from 'fs';
 const bucketName = 'jcweb-app';
 import mime from 'mime-types';
 import { mongooseConnect } from '@/lib/mongoose';
+import { isAdminRequest } from './auth/[...nextauth]';
 
 export default async function handle(req, res){
     await mongooseConnect();
