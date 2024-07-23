@@ -35,4 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-pages/api/auth/[...nextauth].js
+auth/[...nextauth].js
