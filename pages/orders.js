@@ -24,7 +24,7 @@ export default function OrdersPage(){
                 {orders.length > 0 && orders.map(order => (
                     <tr>
                         <td>
-                            {order.createdAt}
+                            {(new Date(order.createdAt)).toLocaleString()}
                         </td>
                         <td>
                             {order.firstName} {order.lastName} <br />
@@ -34,7 +34,7 @@ export default function OrdersPage(){
                         <td>
                             {order.line_items.map(l => (
                                 <>
-                                    {l.price_data?.service_data?.name} x {l.quantity} <br/>
+                                    {l.price_data?.product_data?.name} x {l.quantity} <br/>
                                 </>
                             ))}
                         </td>
